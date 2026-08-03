@@ -13,9 +13,9 @@ dependencies = [
     "fastapi",
     "uvicorn",
     "sqlalchemy",
-    "psycopg[binary]",
-    "pydantic",
-    "pydantic-settings",
+    "psycopg[binary]", # PostgreSQL database driver that lets your Python code connect to a PostgreSQL database
+    "pydantic", # Validates and parses Python data
+    "pydantic-settings", # Loads application configuration from environment variables or .env files using Pydantic models
     "structlog",
     "httpx",
     "pyarrow",

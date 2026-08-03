@@ -17,6 +17,7 @@ class Applicaton:
         print(f"Starting - {self.settings.app_name}")
         print(f"Environment: {self.settings.environment.value}")
         logger.info("Starting application")
+        logger.info("Database URL: %s", self.settings.database_url,)
 
         # request API
         data = self.downloader.download(self.settings.source_url)
